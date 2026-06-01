@@ -141,3 +141,19 @@ The code still demonstrates the main implementation logic for:
 This project was developed as an emergency dispatch system prototype, combining web development, Android development, backend integration, database operations, and real-time notification workflows.
 
 It demonstrates practical experience with full-stack/mobile system design, especially in connecting a web-based reporting interface with a mobile responder application.
+
+## Screenshots
+
+### Web Dispatch Interface
+
+![Web dispatch interface](docs/screenshots/webapp.png)
+
+## Contributors
+
+This project was made for the course Engineering Experience 3 (KU Leuven Electronics and ICT Eng. Technology) in collaboration with 
+
+### Nienke Brandwijk
+### Silke Desmet
+### Göktuğ Kuyumcuoğlu
+### Hengyu Li
+### Yijian Lu
