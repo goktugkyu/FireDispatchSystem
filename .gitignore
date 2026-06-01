@@ -1,0 +1,145 @@
+# =========================
+
+# Dependencies
+
+# =========================
+
+node_modules/
+**/node_modules/
+
+# Package manager caches
+
+.npm/
+.yarn/
+.pnpm-store/
+
+# =========================
+
+# Environment variables / secrets
+
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# Supabase / Firebase / service keys
+
+service-account*.json
+firebase-adminsdk*.json
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+
+# Android local secrets
+
+local.properties
+
+# =========================
+
+# Build outputs
+
+# =========================
+
+build/
+**/build/
+dist/
+**/dist/
+out/
+**/out/
+.next/
+**/.next/
+
+# React / Vite / CRA cache
+
+.cache/
+**/.cache/
+.eslintcache
+**/.eslintcache
+
+# =========================
+
+# Logs
+
+# =========================
+
+logs/
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+
+# Git / nested repo metadata
+
+# =========================
+
+.git/
+**/.git/
+
+# =========================
+
+# IDE / editor files
+
+# =========================
+
+.vscode/
+.idea/
+*.iml
+
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# Android / Gradle
+
+# =========================
+
+.gradle/
+**/.gradle/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.hprof
+
+# =========================
+
+# Temporary files
+
+# =========================
+
+tmp/
+temp/
+**/tmp/
+**/temp/
+
+# =========================
+
+# Large archives / media
+
+# =========================
+
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.mp4
+*.mov
+*.avi
+*.mkv
