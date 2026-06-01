@@ -1,0 +1,44 @@
+-- ESP32 Code met Webserver
+#include <WiFi.h>
+#include <ESPAsyncWebServer.h>
+
+const char* ssid = "JOUW_WIFI_SSID";
+const char* password = "JOUW_WIFI_WACHTWOORD";
+
+const int buzzerPin = 26;  // GPIO-pin voor de buzzer
+AsyncWebServer server(80);
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(buzzerPin, OUTPUT);
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("WiFi verbonden!");
+  Serial.print("IP Adres: ");
+  Serial.println(WiFi.localIP());
+
+  server.on("/webhook", HTTP_POST, [](AsyncWebServerRequest *request){
+    Serial.println("🚨 Nieuwe interventie ontvangen!");
+    tone(buzzerPin, 1000);  // Buzzer aan (1 kHz toon)
+    delay(1000);
+    noTone(buzzerPin);  // Buzzer uit
+    //request->send(200, "text/plain", "Buzzer geactiveerd!");
+  });
+
+  server.begin();
+}
+
+void loop() {
+  // Loopt continue
+  server.handleClient();
+}
+
+
+httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+
+curl -X POST http://192.168.137.24/webhook -H "Content-Type: application/json" -d '{"message": "Activate buzzer"}' 
+

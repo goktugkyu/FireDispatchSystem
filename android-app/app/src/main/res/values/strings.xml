@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">app_ee3</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="dates">
+        <item>date1</item>
+        <item>date2</item>
+        <item>date3</item>
+        <item>date4</item>
+        <item>date5</item>
+        <item>date6</item>
+    </string-array>
+
+    <string-array name="times">
+        <item>time1</item>
+        <item>time2</item>
+        <item>time3</item>
+        <item>time4</item>
+        <item>time5</item>
+        <item>time6</item>
+
+    </string-array>
+
+    <string-array name="durations">
+        <item>duration1</item>
+        <item>duration2</item>
+        <item>duration3</item>
+        <item>duration4</item>
+        <item>duration5</item>
+        <item>duration6</item>
+
+    </string-array>
+</resources>
