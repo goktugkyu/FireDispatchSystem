@@ -146,7 +146,7 @@ It demonstrates practical experience with full-stack/mobile system design, espec
 
 ### Web Dispatch Interface
 
-![Web dispatch interface](docs/screenshots/webapp.png)
+![Web dispatch interface](docs/screenshots/web-app.png)
 
 ## Contributors
 
